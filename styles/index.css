@@ -517,3 +517,61 @@ footer {
 footer * {
     color: #fff;
 }
+/* this media query will affect 993px to 1440px */
+@media only screen and (max-width: 1440px) {
+    .banner-left h1 {
+        font-size: 45px;
+    }
+
+    .banner-right img {
+        width: 80%;
+    }
+
+    .booking-section h3 {
+        font-size: 45px;
+    }
+
+    .gallery-right h2,
+    .gallery-right h3 {
+        font-size: 55px;
+    }
+
+    .gallery-right p {
+        font-size: 16px;
+    }
+
+    .food-detail h4 {
+        font-size: 24px;
+    }
+
+    .food-detail p {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .title {
+        font-size: 35px;
+    }
+
+    .food-preview .date {
+        width: 60px;
+        height: 60px;
+    }
+
+    .food-preview .date h6 {
+        font-size: 20px;
+    }
+
+    .food-preview .date p {
+        font-size: 14px;
+    }
+
+    .bottom-content p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 767px) {}
