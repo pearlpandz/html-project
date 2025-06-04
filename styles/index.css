@@ -572,6 +572,7 @@ footer * {
     }
 }
 
+/* this media query will affect 768px to 992px */
 @media only screen and (max-width: 992px) {}
 
 @media only screen and (max-width: 767px) {}
