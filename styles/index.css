@@ -284,7 +284,7 @@ header {
 .gallery-right h3 {
     font-size: 75px;
     color: #ffc107;
-    width: 600px;
+    max-width: 600px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -517,6 +517,7 @@ footer {
 footer * {
     color: #fff;
 }
+
 /* this media query will affect 993px to 1440px */
 @media only screen and (max-width: 1440px) {
     .banner-left h1 {
@@ -575,4 +576,224 @@ footer * {
 /* this media query will affect 768px to 992px */
 @media only screen and (max-width: 992px) {}
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .order-form input {
+        height: 36px;
+        padding: 10px;
+        font-size: 14px;
+        width: 175px;
+    }
+
+    .order-form button {
+        height: 36px;
+        padding: 7px;
+        font-size: 14px;
+    }
+
+    .banner-right img {
+        width: 100%;
+    }
+
+    .delivery-info {
+        position: unset;
+    }
+
+    .banner-right {
+        margin-bottom: 20px;
+    }
+
+    .form-elements {
+        flex-direction: column;
+        gap: 10px;
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    .gallery {
+        flex-direction: column-reverse;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .gallery-left .top {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .gallery-left .top img:first-child {
+        width: 50%;
+        object-fit: cover;
+        height: 120px;
+    }
+
+    .gallery-left .top img:nth-child(2) {
+        width: 50%;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    .gallery-left .bottom {
+        gap: 10px;
+        flex-direction: row;
+    }
+
+    .gallery-left .bottom img:first-child {
+        height: 120px;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .gallery-left .bottom img:last-child {
+        height: 120px;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .gallery-right h2,
+    .gallery-right h3 {
+        font-size: 24px;
+    }
+
+    .gallery-right p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    .highlight-food {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .food-detail h4 {
+        font-size: 18px;
+    }
+
+    .food-detail p {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .grid {
+        grid: auto / auto;
+        gap: 20px;
+    }
+
+    .food-detail .food-title {
+        flex-direction: column;
+    }
+
+    .footer-section .top {
+        flex-direction: column;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .logo {
+        color: #fff;
+        font-size: 35px;
+        margin-bottom: 5px;
+    }
+
+    .menu a {
+        text-transform: capitalize;
+    }
+
+    .header-right button {
+        margin-top: 10px;
+    }
+
+    .banner-left h1 {
+        font-size: 28px;
+    }
+
+    .banner-left h1 span {
+        display: inline-block;
+    }
+
+    .banner-left h4 {
+        font-size: 18px;
+    }
+
+    /* section - table booking */
+    .booking-section {
+        padding: 20px;
+        margin: 25px 0;
+        border-radius: 10px;
+        position: unset;
+    }
+
+    .booking-section h6 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .booking-section h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .booking-form {
+        text-align: left;
+    }
+
+    .form-elements>* {
+        flex-basis: unset;
+        height: 36px;
+        padding: 7px;
+    }
+
+    .booking-form button {
+        font-size: 14px;
+        padding: 7px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    .footer-section .top svg {
+        font-size: 35px;
+    }
+
+    .footer-section .top h5 {
+        font-size: 18px;
+    }
+
+    .footer-section .top h5 span:first-child {
+        font-size: 12px;
+    }
+
+    .footer-section .top button {
+        font-size: 14px;
+    }
+
+    .footer-section .top button svg {
+        font-size: 14px;
+    }
+
+    .bottom-content h4 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
